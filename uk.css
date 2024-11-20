@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("../images/taj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.2);
+  color:whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+nav .logo {
+  width: 60%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 35%;
+
+  text-decoration: none;
+  font-size: 100%;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:first-child {
+  color:black ;
+  font-weight: lighter;
+  background: indianred;
+  width: auto;
+  height: auto;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 65px;
+  font-weight: 200;
+  color: seagreen;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 100;
+  color: initial;
+}
+
+section h1 {
+  margin: 70px 0 60px 0;
+  font-size: 75px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 45px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  color: blueviolet;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 18px 60px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: deeppink;
+  color: aliceblue;
+}
+
+.btnone:hover {
+  background: #00b894;
+  color: blue;
+}
+
+section .btntwo {
+  background: blueviolet;
+  color: aliceblue;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: lightpink;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color:red;
+}
+
+@keyframes changetext {
+  15% {
+    content: "Welcome";
+  }
+  30% {
+    content: "To";
+  }
+  40% {
+    content: "UkArts";
+  }
+  60% {
+    content: "For more";
+  }
+  80% {
+    content: "Contact us";
+  }
+  100% {
+    content: " Wedding invitation";
+  }
+}
+
+footer{
+    width:100%;
+    height: auto;
+    font-size: 20px;
+    font-family: initial;
+    background-color: grey;
+    margin-top: 20px;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer i{
+    color:skyblue;
+    font-size: 30px;
+    margin-left: 20px;
+}
